@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Ryan}{Blanchette}{Data Professional }{\contactline{\href{https://www.github.com/jblanche1325}{jblanche1325}}{\href{https://www.linkedin.com/in/ryanblanchette13}{ryanblanchette13}}{\href{mailto:jblanche1325@gmail.com}{jblanche1325@gmail.com}}{\href{tel:+16159436643}{(615)943-6643}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE PART 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Asurion}
+\descript{| Sr. Business Intelligence Developer }
+\location{August 2021 – Current | Nashville, Tennessee}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Developed and deployed new tables and stored procedures into production that enhanced the supply chain data model 
+\item Furthered the effort to convert the supply chain data model entities from on-premises data storage to cloud-based storage
+\item Served the needs of customers across the finance/supply chain organization by creating and updating various tables, stored procedures, and reports
+\end{tightemize}
+\sectionsep
+
+\runsubsection{University of Tennessee}
+\descript{| Data Analyst }
+\location{September 2019 – August 2021 | Knoxville, Tennessee}
+\begin{tightemize}
+\sectionsep
+\item Collected and cleaned data from various sources to
+submit to critical surveys for the continuing success of the
+engineering college
+\item Fostered the movement from manual data processes and
+reports from Excel to Microsoft SQL Server, R, and Power
+BI
+\item Designed and implemented Power BI dashboards for the
+engineering college leadership
+\item Built visualizations and reports for senior leadership to
+effectively demonstrate strengths of the college
+\item Collaborated with other data owners across the university
+to answer ongoing and ad hoc data needs
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Jewelry Television}
+\descript{| Data Analyst }
+\location{August 2018 – September 2019 | Knoxville, Tennessee}
+\begin{tightemize}
+\sectionsep
+\item Led the Analytics team in learning about and adopting
+big data technologies such as Hive and Spark which
+produced greater opportunity and increased speed of
+existing solutions
+\item Successfully converted production models originally
+built in R into PySpark code
+\item Standardized the methodology used to identify potential
+churn customers with machine learning in R to analyze
+customer purchase history and produce risk scores with
+nearly 90\% model accuracy
+\item Maintained reports on the effectiveness of various
+marketing campaigns with various tools in R which
+helped guide future campaigns
+\item Engaged executive-level management to discuss
+goals that could be met with data and analytics
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UnitedHealth Group}
+\descript{| Healthcare Economics Consultant }
+\location{December 2016 – August 2018 | Remote}
+\begin{tightemize}
+\sectionsep
+\item Developed analytics using SAS that identified medical claims as either fraud, waste, or abuse which resulted in thousands of dollars in savings
+\item Ut Supported in the development of a healthcare provider exploration tool with Tableau \item Explored vendor claims data using machine learning in R and SAS Enterprise Miner in order to aid the creation of new analytics  
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming/Tools}
+\sectionsep
+\location{Proficient:}
+Python \textbullet{} SQL \textbullet{} R \textbullet{} Excel \\
+\sectionsep
+\location{Experienced:}
+Tableau \textbullet{} Power Platform \textbullet{} Linux  \\
+\sectionsep
+\location{Familiar:}
+AWS \textbullet{} HTML \textbullet{} Databricks  \\
+\sectionsep
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+Tidyverse \textbullet{} Caret \textbullet{} \\ 
+randomForest \textbullet{} Shiny \textbullet{} \\
+Plotly \textbullet{} Keras \textbullet{} PySpark \textbullet{} \\
+BeautifulSoup \textbullet{} Git 
+
+\sectionsep
+\sectionsep
+\subsection{Technical}
+\sectionsep
+Machine Learning \textbullet{} Statistics \\
+Time Series Forecasting \textbullet{} \\
+NLP  \textbullet{} Data Visualization \textbullet{} ETL \\
+Query Optimization \textbullet{} \\ 
+Cloud Computing
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{University of 
+\\Tennessee}
+\descript{Master's in Business Analytics}
+\location{December 2016 | Knoxville, Tennessee}
+Haslam College of Business \\
+\location{ GPA: 3.80 / 4.00 }
+
+\sectionsep
+\subsection{University of
+\\Tennessee}
+\descript{Bachelor's in Statistics}
+\location{May 2015 | Knoxville, Tennessee}
+College of Arts and Sciences \\
+\location{ GPA: 3.75 / 4.00 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\subsection{Amazon Web Services}
+\descript{Cloud Practitioner}
+\location{December 2021}
+
+
+\end{minipage} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     PAGE TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\begin{minipage}[t]{1.0\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE PART 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience (cont.)}
+
+\runsubsection{University of Tennessee}
+\descript{| Graduate Teaching Assistant }
+\location{August 2015 – May 2016 | Knoxville, Tennessee}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Guided senior undergraduate students in statistics through emails, office hours, and study sessions
+\item Graded homework, projects, and exams
+\item Experimented with different statistical packages to help modernize the courses 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{University of Tennessee}
+\descript{| Mathematics Tutor }
+\location{January 2014 – May 2015 | Knoxville, Tennessee}
+\begin{tightemize}
+\sectionsep
+\item Coached mathematics students through different methods such as examples and homework help
+with led to a stronger student understanding of the materials
+\item Communicated with supervisor about ways to improve the tutorial center; a new and improved
+tutor schedule was created
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+
+Blanchette, R., A. Khojandi, D. Cox, M. Oliver, R. Fernandez. Predicting Alzheimer’s
+Disease Using Driving Simulator Data. \textit{In 2020 42nd Annual International Conference of
+the IEEE Engineering in Medicine and Biology Society}, 2020, pp. 5432-5435. IEEE.
+
+\sectionsep
+
+\end{minipage}
+
+
+
+\end{document}  \documentclass[]{article}
+
